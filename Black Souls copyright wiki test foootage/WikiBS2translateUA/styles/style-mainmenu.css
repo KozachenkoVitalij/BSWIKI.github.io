@@ -4,6 +4,7 @@ body{
 	max-width: 100vw;
 	overflow-x:hidden ;
 	height: 100%;
+	margin: 0;
 }
 header{
 	position: fixed;
@@ -101,9 +102,7 @@ a {
 a:hover {
 	text-decoration: underline;
 }
-.navigation{
-	display: block;
-}
+
 .photo-gallery {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -174,7 +173,7 @@ main{
 	height: 340px;
 	background-image: url("communityBackground.png");
 }
-.communityInfo > p{
+.communityInfo {
 	padding-top:15px ;
 	font-size: 20px;
 	font-family: monospace;
@@ -191,7 +190,7 @@ main{
 }
 .Wiki{
 	padding-top: 20px;
-	padding-bottom: 110px;
+	padding-bottom: 60px;
 }
 hr{
 	padding-top: 40px	;
@@ -231,4 +230,52 @@ hr{
 #listToolsWiki > span:hover{
 	background-color: hsl(220deg 13.79% 19.88%);
 	border-radius: 10px;
+}
+.leftSide > img{
+	width: fit-content;
+	height: 30px;
+	margin-top: 20px;
+	margin-left: 40px;
+}
+.leftSide{
+	width: fit-content;
+}
+.mainFooterTop{
+	display: flex;
+}
+footer{
+	margin: 32px;
+	padding:32px;
+	background-color: hsl(220, 20%, 6%);
+  width: auto;
+	height: 300px;
+	margin: 0;
+	padding-left: 60px ;
+}
+.navbarFooter{
+	width: fit-content;
+	margin:auto;	
+	margin-right:50px;
+}
+.navbarFooter > ul,li{
+	font-size: 14px;
+}
+.hoverMouse {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+}
+.hoverMouse:hover{
+	background-color: rgba(255, 255, 255, 0.1); 
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.mainFooterBot{
+	background-color: hsl(220, 20%, 6%);
+	margin: 32px;
+	width: 100%;
+}
+#listSpriteFooter{
+	display: flex;
+	gap: 10px;
+	list-style: none;
 }
