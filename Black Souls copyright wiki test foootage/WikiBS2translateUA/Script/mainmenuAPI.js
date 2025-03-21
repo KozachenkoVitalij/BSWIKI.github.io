@@ -1,8 +1,3 @@
-/*var myHeading = document.querySelector("h1");
-myHeading.textContent = "Hello world!";
-*//*document.querySelector("html").onclick = function () {
-  alert("Ouch! Stop poking me!");
-};*/
 var aliceRedhoodSprite = document.querySelector(".Alice");
 var resetTimer = null; 
 aliceRedhoodSprite.onclick = function(){
@@ -41,3 +36,12 @@ setTimeout(() => {
         AliImg.replaceWith(buttonAlice);
     }, 5000);
 }
+
+document.querySelectorAll(".hoverIcon").forEach(icon => {
+    icon.addEventListener("mouseover", () => {
+        icon.src = icon.getAttribute("data-hover");
+    });
+    icon.addEventListener("mouseout", () => {
+        icon.src = icon.getAttribute("data-original");
+    });
+});
