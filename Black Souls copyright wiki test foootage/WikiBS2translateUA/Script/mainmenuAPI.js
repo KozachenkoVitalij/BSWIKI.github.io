@@ -45,3 +45,7 @@ document.querySelectorAll(".hoverIcon").forEach(icon => {
         icon.src = icon.getAttribute("data-original");
     });
 });
+
+fetch('template/headerTemp.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('headerTemp').bswikifan = data);
