@@ -1,0 +1,88 @@
+.headerContainer{
+	display: flex;
+	width: 1380px;
+	margin: auto;
+}
+.container-text-h1{
+	width: fit-content;
+	height: fit-content;
+}
+.toolsNav{
+	margin: auto;
+	margin-right: 0;
+}
+.main-bs1-about{
+	width: 1100px;
+	display: flex;
+	margin:0;
+	padding-right:30px;
+}
+.asideNav{
+	display: block;
+	position: sticky;
+	padding: 0;
+    padding-top: 20px;
+    width: 250px;
+    height: 100vh;
+    background-color: transparent;
+}
+.spoilerInfo{
+	display: block;
+	width: inherit;
+	margin-left:0;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.aliceSpoiler{
+	display: flex;
+	border: solid 1px white;
+	width: inherit;
+	background-color: darkred;
+	margin-bottom: 5px;
+}
+.aliceSpoiler > img{
+	margin: 5px;
+	margin-left: 10px;
+}
+.aliceSpoiler > p1{
+	margin: 18px;
+	font-size: 20px;
+	color: oklch(0.76 0.12 220.76);
+}
+.main-aside-container{
+	width: 1380px;
+	display: flex;
+	margin: auto;
+}
+.cutiSpoiler{
+	display: flex;
+	border: solid 1px white;
+	width: inherit;
+	background-color: oklch(0.55 0.09 220.98);
+}
+.cutiSpoiler > img{
+	margin: 5px;
+	margin-left: 10px;
+}
+.cutiSpoiler > p1{
+	margin: 10px;
+	margin-left: 18px;
+	font-size: 20px;
+	color: oklch(0.76 0.12 220.76);
+}
+.content-ul{
+	border-left: solid 1px rgb(255 255 255 / 5%);
+	padding-left: 10px;
+	font-weight: bold;
+}
+.img-audio-container-info{
+	display:block ;
+	padding: 0;
+	padding-top: 10px;
+}
+audio::-webkit-media-controls{
+	background-color: transparent; 
+    border-radius: 0;  
+    padding: 10px;
+    color: black;
+}
